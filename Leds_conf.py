@@ -3,6 +3,7 @@ import time
 
 RDK = robolink.Robolink()
 
+#asignamos led a tipo item
 led_rojo = RDK.Item("led_rojo")
 led_verde = RDK.Item("led_verde")
 led_amarillo = RDK.Item("led_amarillo")
@@ -17,11 +18,11 @@ def red_off(mqttc, topic):
     mqttc.publish(topic, "RED OFF")
     led_rojo.setVisible(False)
 
-def yellow_on(mqttc, topic): # Corregido: añadidos paréntesis ()
+def yellow_on(mqttc, topic): 
     mqttc.publish(topic, "AMARILLO ON")
     led_amarillo.setVisible(True)
 
-def yellow_off(mqttc, topic): # Corregido: añadidos paréntesis ()
+def yellow_off(mqttc, topic):
     mqttc.publish(topic, "AMARILLO OFF")
     led_amarillo.setVisible(False)
 
