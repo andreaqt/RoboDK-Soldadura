@@ -83,3 +83,5 @@ void on_loop() {
     delay(50); // Anti-rebote (Debounce)
 }
 ````
+## Galeria
+![Descripción de la imagen](img/hardware_proyecto.jpeg)
