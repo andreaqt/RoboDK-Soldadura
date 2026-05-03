@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.env
+
+# Arduino / C++ / PlatformIO
+build/
+.vscode/
+.pio/
+*.bin
+*.elf
+*.hex
+
+# Sistema Operativo y Carpetas ocultas
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+
+# Datos de RoboDK
+*.strm
