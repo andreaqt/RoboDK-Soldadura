@@ -1,14 +1,12 @@
 void suscribirseATopics() {
-  
-  // TODO: añadir suscripciones a los topics MQTT ...
   mqtt_subscribe(TOPIC_COMANDO);
   mqtt_subscribe(TOPIC_STATUS);
   mqtt_subscribe(TOPIC_BUTTON);
 }
 
 void alRecibirMensajePorTopic(char* topic, String incomingMessage) {
-  
-  // If a message is received on the topic ...
+
+  //lee el mensaje enviado por button
   if (strcmp(topic, TOPIC_BUTTON) == 0 ) {
 
     infoln("Mensaje crudo recibido: [" + incomingMessage + "]");
@@ -20,6 +18,7 @@ void alRecibirMensajePorTopic(char* topic, String incomingMessage) {
     
   }
 
+    //gestiona los estados de los leds que reciben por la mqtt
     if (strcmp(topic, TOPIC_STATUS) == 0 ) {
     incomingMessage.trim();
     if(incomingMessage == "RED ON") {
