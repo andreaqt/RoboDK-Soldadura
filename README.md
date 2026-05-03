@@ -17,6 +17,17 @@ El sistema permite una comunicación bidireccional:
 * **`Movimientos.py`**: Define las trayectorias y movimientos del robot.
 * **`Main_para_probar_semaforos.py`**: Script de prueba para la secuencia de los semáforos.
 
+##  Aviso de Seguridad y Privacidad
+
+> **Importante:** Por motivos de seguridad y para proteger la integridad de la red local, no todos los archivos mencionados están disponibles para descarga pública.
+> 
+> Se han omitido deliberadamente archivos que contienen:
+> * Credenciales de acceso a redes Wi-Fi.
+> * Direcciones IP y puertos privados del Broker MQTT.
+> * Datos de configuración sensibles (`Config.h`).
+>
+> Los fragmentos de código que se muestran a continuación tienen fines educativos y muestran la lógica principal del sistema sin comprometer la seguridad del entorno real.
+
 ### 🔌 Código de Arduino / ESP32 (C++)
 * **`mqtt_a_ard.ino`**: Archivo principal del microcontrolador.
 * **`w_loop.ino`**: Lógica para la lectura del botón y detección de flancos (*edge detection*).
