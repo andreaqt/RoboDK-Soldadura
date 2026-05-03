@@ -17,6 +17,8 @@ El sistema permite una comunicación bidireccional:
 * **`Movimientos.py`**: Define las trayectorias y movimientos del robot.
 * **`Main_para_probar_semaforos.py`**: Script de prueba para la secuencia de los semáforos.
 
+---
+
 ##  Aviso de Seguridad y Privacidad
 
 > **Importante:** Por motivos de seguridad y para proteger la integridad de la red local, no todos los archivos mencionados están disponibles para descarga pública.
@@ -27,6 +29,8 @@ El sistema permite una comunicación bidireccional:
 > * Datos de configuración sensibles (`Config.h`).
 >
 > Los fragmentos de código que se muestran a continuación tienen fines educativos y muestran la lógica principal del sistema sin comprometer la seguridad del entorno real.
+
+---
 
 ### 🔌 Código de Arduino / ESP32 (C++)
 * **`mqtt_a_ard.ino`**: Archivo principal del microcontrolador.
@@ -64,6 +68,7 @@ def move_robot(position):
         robot.MoveJ(target)
 ````
 
+
 ### 2. Lógica del Hardware en ESP32 (`w_loop.ino`)
 
 ````cpp
@@ -93,6 +98,9 @@ void on_loop() {
     lastButtonState = currentButtonState;
     delay(50); // Anti-rebote (Debounce)
 }
+
+---
+
 ````
 ## Galeria
 ![Descripción de la imagen](img/hardware_proyecto.jpeg)
