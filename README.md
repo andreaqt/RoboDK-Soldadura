@@ -53,7 +53,7 @@ def move_robot(position):
         robot.MoveJ(target)
 ````
 
-### 2. Lógica del Hardware en ESP32 (`w_loop.ino.c`)
+### 2. Lógica del Hardware en ESP32 (`w_loop.ino`)
 
 ````cpp
 
