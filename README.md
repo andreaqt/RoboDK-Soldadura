@@ -19,6 +19,16 @@ El sistema permite una comunicación bidireccional:
 
 ---
 
+### 🔌 Código de Arduino / ESP32 (C++)
+* **`mqtt_a_ard.ino`**: Archivo principal del microcontrolador.
+* **`w_loop.ino`**: Lógica para la lectura del botón y detección de flancos (*edge detection*).
+* **`g_comunicaciones.ino`**: Callback para procesar los mensajes MQTT.
+* **`s_setup.ino`**: Configuración inicial de los pines.
+* **`Config.h`**: Archivo que almacena los datos sensibles de red y conexión (credenciales Wi-Fi, dirección IP del Broker MQTT y contraseñas).
+
+---
+
+
 ##  Aviso de Seguridad y Privacidad
 
 > **Importante:** Por motivos de seguridad y para proteger la integridad de la red local, no todos los archivos mencionados están disponibles para descarga pública.
@@ -29,16 +39,6 @@ El sistema permite una comunicación bidireccional:
 > * Datos de configuración sensibles (`Config.h`).
 >
 > Los fragmentos de código que se muestran a continuación tienen fines educativos y muestran la lógica principal del sistema sin comprometer la seguridad del entorno real.
-
----
-
-### 🔌 Código de Arduino / ESP32 (C++)
-* **`mqtt_a_ard.ino`**: Archivo principal del microcontrolador.
-* **`w_loop.ino`**: Lógica para la lectura del botón y detección de flancos (*edge detection*).
-* **`g_comunicaciones.ino`**: Callback para procesar los mensajes MQTT.
-* **`s_setup.ino`**: Configuración inicial de los pines.
-
-*(Nota: El archivo `Config.h` se ha omitido de este repositorio para proteger los datos personales y de la red de la universidad).*
 
 ---
 
